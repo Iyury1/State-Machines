@@ -34,3 +34,9 @@ RUN git clone https://github.com/cpputest/cpputest.git && \
 
 # Set the CPPUTEST_HOME environment variable
 ENV CPPUTEST_HOME=/home/cpputest
+
+# Create and set the working directory to /home/app
+WORKDIR /home/app
+
+# Set the default command to bash
+CMD ["/bin/bash"]
